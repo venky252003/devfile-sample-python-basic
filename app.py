@@ -34,11 +34,7 @@ def create_product():
     return jsonify(new_product), 201
 
 if __name__ == '__main__':
-    app.run(debug=True)
-
-
-if __name__ == '__main__':
-    port = os.environ.get('FLASK_PORT') or 8080
+    port = os.environ.get('FLASK_PORT') or 8081
     port = int(port)
 
     app.run(port=port,host='0.0.0.0')

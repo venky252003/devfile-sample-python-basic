@@ -16,3 +16,13 @@ Before you begin creating an application with this `devfile` code sample, it's h
 * For more information about Python, see [Python](https://www.python.org/).
 * For more information about devfiles, see [Devfile.io](https://devfile.io/).
 * For more information about Dockerfiles, see [Dockerfile reference](https://docs.docker.com/engine/reference/builder/).
+
+#### Docker commands
+##### Docker build 
+```
+docker build -t python-flask-api .
+```
+##### Docker run command
+```
+docker run -dp 8081:8081 python-flask-api
+```
